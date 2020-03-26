@@ -19,11 +19,14 @@
 <body>
   <script>
     function claves() {
-      div = document.getElementById("claves");
-      if (div.style.display == 'none') {
-          div.style.display = 'block';
+      divClaves = document.getElementById("claves");
+      divDosbox = document.getElementById("jsdos");
+      if (divClaves.style.display == 'none') {
+        divDosbox.style.display = 'none';
+        divClaves.style.display = 'block';
       } else {
-        div.style.display = 'none';
+        divDosbox.style.display = 'block';
+        divClaves.style.display = 'none';
       }
     }
   </script>
